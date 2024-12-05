@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h4 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background: #f2f2f2;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4 id="tz">TZ:</h4>
+        <p>Скрипт для генерации историй с картинками и автоматической публикацией по таймингу через крон.</p>
+
+        <h4 id="realisation">Realisation:</h4>
+        <table>
+            <colgroup>
+                <col style="width: 26%" />
+                <col style="width: 16%" />
+                <col style="width: 56%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Aprox Time</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Подключение/настройка GPT на генерацию</td>
+                    <td>2-4H</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>❓❓❓Телеграм бот для администрирования❓❓❓</td>
+                    <td>3-6H</td>
+                    <td>Ручное добавление аккаунта как бота в скрипт, валидация/перегенерация контента</td>
+                </tr>
+                <tr>
+                    <td>Настройка создания/публикации истории на МХ</td>
+                    <td>3-6H</td>
+                    <td>Создание драфт истории, добавление контента, тегов…</td>
+                </tr>
+                <tr>
+                    <td>Генерация картинок</td>
+                    <td>2-4H</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Настройка крона и очереди аккаунтов</td>
+                    <td>1-2H</td>
+                    <td>Аккаунты вместе публикуют истории с небольшим интервалом или скрип при запуске определяет кто публикует</td>
+                </tr>
+                <tr>
+                    <td>Total Time</td>
+                    <td>11-22H</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 id="qna">QnA:</h4>
+        <ul>
+            <li>Где деплоить? На МХ уже есть машины на которых можно запустить скрипт? Если нет, предлагаю EC2 t2.micro, для данного скрипта это должно быть бесплатно.</li>
+            <li>Сколько должно быть ботов? Нужно ли автоматическое создание бота или только ручное?</li>
+            <li>Нужна ли проверка контента перед публикацией, функционал аппрува и перегенерации?</li>
+            <li>Генерация картинок:
+                <ul>
+                    <li>MidJourney - $10 в месяц - 3,3 часа GPU-времени в режиме Fast.
+                        <img src="1.png" alt="MidJourney Pricing">
+                    </li>
+                    <li>DALL·E 3 от OpenAI - 20$
+                        <img src="2.png" alt="DALL·E Pricing">
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
